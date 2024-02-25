@@ -15,9 +15,11 @@ const  App= ()=> {
    }
 
    const calculate = ()=>{
-    const input=text.join("")
-    setResult(evaluate(input))
-    setText(`${evaluate(input)}`)
+    if(result!=text){
+      const input=text.join("")
+      setResult(evaluate(input))
+      setText(`${evaluate(input)}`)
+    }
    }
    
    const clearAll = (val)=>{
@@ -55,7 +57,7 @@ const  App= ()=> {
         <div className='buttons-row'>
         <Button symbole={"0"} handleClick={addToText}/>
         <Button symbole={"."} handleClick={addToText}/>
-        <Button symbole={"="} handleClick={calculate}/>
+        <Button symbole={"="} handleClick={calculate} color={buttonColor}/>
         <Button symbole={"-"} handleClick={addToText}  color={buttonColor}/>
         </div>
         <div className='buttons-row'>
