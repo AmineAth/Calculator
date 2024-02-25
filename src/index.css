@@ -1,0 +1,17 @@
+body{
+    background-color: #222;
+   
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc-table{
+    background-color: rgb(232, 232, 232);
+    width: 400px;
+    border-radius: 16px;
+}
+.buttons-row{
+    display: flex;
+}
