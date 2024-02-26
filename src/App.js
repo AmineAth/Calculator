@@ -8,7 +8,7 @@ const  App= ()=> {
    const buttonColor="orange"
 
    const [text,setText]=useState('')
-   const [result,setResult]=useState('')
+   const [result,setResult]=useState('0')
 
    const addToText = (val)=>{
     setText((text)=>[...text, val + ""])
@@ -24,7 +24,7 @@ const  App= ()=> {
    
    const clearAll = (val)=>{
     setText('')
-    setResult('')
+    setResult('0')
    }
 
    const deleteLastDigit = () => {
