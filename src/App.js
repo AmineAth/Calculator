@@ -37,26 +37,19 @@ const  App= ()=> {
         <Screen text={text} result={result}/>
 
         <div className='buttons-row'>
-        <Button symbole={"7"} handleClick={addToText}/>
-        <Button symbole="8" handleClick={addToText}/>
-        <Button symbole={"9"} handleClick={addToText}/>
+        {['7','8','9'].map((e)=><Button symbole={e} handleClick={addToText}/>)}
         <Button symbole={"/"} handleClick={addToText}  color={buttonColor}/>
         </div>
         <div className='buttons-row'>
-        <Button symbole={'4'} handleClick={addToText}/>
-        <Button symbole={'5'} handleClick={addToText}/>
-        <Button symbole="6" handleClick={addToText}/>
+        {['4','5','6'].map((e)=><Button symbole={e} handleClick={addToText}/>)}
         <Button symbole="*" handleClick={addToText}  color={buttonColor}/>
         </div>
         <div className='buttons-row'>
-        <Button symbole={"1"} handleClick={addToText}/>
-        <Button symbole={"2"} handleClick={addToText}/>
-        <Button symbole={"3"} handleClick={addToText}/>
+        {['1','2','3'].map((e)=><Button symbole={e} handleClick={addToText}/>)}
         <Button symbole={"+"} handleClick={addToText} color={buttonColor}/>
         </div>
         <div className='buttons-row'>
-        <Button symbole={"0"} handleClick={addToText}/>
-        <Button symbole={"."} handleClick={addToText}/>
+        {['0','.'].map((e)=><Button symbole={e} handleClick={addToText}/>)}
         <Button symbole={"="} handleClick={calculate} color={buttonColor}/>
         <Button symbole={"-"} handleClick={addToText}  color={buttonColor}/>
         </div>
